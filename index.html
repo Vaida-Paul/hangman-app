@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="src/scss/main.css" />
+    <link rel="icon" href="src/images/logo.png" />
+    <script type="module" src="src/js/hangman.js"></script>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <div class="main-result">
+        <p class="result-stars hidden"></p>
+        <h3 class="result-text">Game Over</h3>
+        <p class="correct-text">The correct ward was: <span class="correct-word"></span></hp>
+        <div class="btn-modal">
+          <button class="btn-play">Play Again</button>
+          <button class="btn-2x"><span class="icon">👥</span> 2X</button>
+        </div>
+      </div>
+      <div class="set-data">
+        <label for="input-word">Word:
+          <input type="text" id="input-word" placeholder="The word">
+        </label>
+        <label for="input-hint">Hint:
+          <input type="text" id="input-hint" placeholder="Hint">
+        </label>
+        <div class="btn-area-playAgain">
+          <button class="btn-playAgain">Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <img
+          src="src/images/hangman-0.svg"
+          alt="hangman-1"
+          height="270px"
+          class="image"
+        />
+        <p class="answer">Incorrect guesses: <span class="score">0</span>/6</p>
+      </div>
+
+      <main class="game-box">
+        <p class="hidden-word"></p>
+        <div class="btn-area">
+          <button class="btn-hint">💡Hint!</button>
+          <p class="hint"></p>
+        </div>
+        <div class="keyboard">
+          
+        </div>
+      </main>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

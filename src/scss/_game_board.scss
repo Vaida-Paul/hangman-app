@@ -1,0 +1,79 @@
+.container {
+  background-color: white;
+  border-radius: 15px;
+  width: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 60px 40px;
+  gap: 50px;
+  z-index: 1;
+
+  .content {
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .answer {
+      text-align: center;
+    }
+  }
+  .game-box {
+    //display: column;
+    //justify-content: center;
+    //align-items: center;
+    .btn-area {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      margin-top: 30px;
+      .btn-hint {
+        background-color: rgb(6, 216, 6);
+        border: none;
+        border-radius: 6px;
+        padding: 9px;
+        cursor: pointer;
+        width: 80px;
+        height: 40px;
+        text-align: left;
+      }
+      // .hint {
+      //   //display: none;
+      // }
+    }
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    .keyboard {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      button {
+        background-color: $primaryColor;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        padding: 6px;
+        font-size: 1rem;
+        border-radius: 4px;
+        width: calc(100% / 9 - 5px);
+      }
+      button:hover {
+        background-color: $lighterPrimaryColor;
+      }
+    }
+    .hidden-word {
+      text-align: center;
+      letter-spacing: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}

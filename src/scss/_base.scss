@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Edu+SA+Beginner&family=Poppins&family=Raleway:ital,wght@0,400;1,200&display=swap");
+
+$primaryColor: rgb(47, 102, 125);
+//$primaryColor: rgb(19, 109, 112);
+$lighterPrimaryColor: rgb(59, 122, 149);
+$overlayBackground: rgba(0, 0, 0, 0.6);
+$modalColor: rgb(190, 183, 183);
+
+$blurValue: blur(3px);
+
+$screenVal: 782px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $primaryColor;
+  padding: 0 10px;
+}
+
+.hidden {
+  display: none;
+}
+//Responsive
+@media (max-width: $screenVal) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    .content {
+      .img {
+        width: 400px;
+      }
+    }
+  }
+}
