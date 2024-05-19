@@ -6,7 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 
 package.json
-package.json
+package-lock.json
+.gitignore
+
 
 # Dependency directories
 node_modules/
