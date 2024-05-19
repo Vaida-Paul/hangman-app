@@ -22,5 +22,5 @@ Hangman Game is a responsive web application built using vanilla JavaScript, SCS
 
 ## Feedback
 
-Feel free to [open an issue](https://github.com/your-username/hangman-game/issues) or submit a pull request with any feedback or suggestions for improvement.
+Feel free to [open an issue](https://github.com/Vaida-Paul/hangman-app/issues) or submit a pull request with any feedback or suggestions for improvement.
 
